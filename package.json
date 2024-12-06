@@ -1,0 +1,22 @@
+{
+  "name": "projeto-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Antônio Vinícius da Silva Sousa",
+  "license": "ISC",
+  "description": "Projeto Backend",
+  "dependencies": {
+    "dotenv": "^16.4.6",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "node": "^20.18.1",
+    "nodemon": "^3.1.7",
+    "sequelize": "^6.37.5"
+  }
+}

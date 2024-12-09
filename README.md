@@ -32,7 +32,7 @@ A organização do projeto é organizada da seguinte maneira:
 1. **Clone o repositório**
 
    ```bash
-   git clone https://github.com/islenemeireles/projeto-backend.git
+   git clone https://github.com/AntonioViniciusSousa/projeto-backend.git
    cd projeto-backend
    ```
 

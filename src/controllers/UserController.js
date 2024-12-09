@@ -1,3 +1,5 @@
+const MD5 = require('crypto-js/md5')
+
 const UserModel = require("../models/UserModel");
 const ProductsModel = require("../models/ProductsModel");
 const { error } = require("console");
@@ -33,6 +35,8 @@ class UserController {
     UserModel.hasMany(ProductsModel, { foreignKey: "product_id" });
 
     const body = request.body;
+    const password = MD5(body.password).toString()
+    body.password = password;
 
     UserModel.create(body, { include: ProductsModel });
     return response.status(201).json({

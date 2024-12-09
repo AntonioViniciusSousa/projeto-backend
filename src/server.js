@@ -1,5 +1,5 @@
 const express = require("express");
-//const PublicRoutes = require("./src/Routes/PublicRoutes.js");
+const PublicRoutes = require("./routes/PublicRoutes.js");
 const PrivateRoutes = require("./routes/PrivateRoutes.js");
 
 const host = "localhost";
@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
   return response.send("Oi, eu sou um Backend com NodeJS + Express");
 });
 
-//app.use(PublicRoutes);
+app.use(PublicRoutes);
 app.use(PrivateRoutes);
 
 app.listen(port, host, () => {
